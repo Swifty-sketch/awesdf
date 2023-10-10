@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+               -webkit-appearance: none;
+                margin: 0;
+        }
+    </style>
+
+    <title>Marsel - Grid + form</title>
+</head> 
+<body>          
+
+  <form action="https://httpbin.org/anything" method="post" class="form1">
+    <div id="text-div">
+        <h1>Form<span id="text-inside-div">Get</span></h1>
+    </div>
+
+        <label for="fullName" class="fullName">Full name:</label>
+        <input class = "icon-input" name="Fullname" id="fullName" type="name" placeholder="Full name">
+
+        <label for="pass-word" class="pass-word"> Password:</label>
+        <input class = "icon-input" name="pass-word" id="pass-word" type="password" placeholder="Password">
+
+        <label for="number" class="number"> Contact Number:</label>
+        <input class = "icon-input" name="number" id="lastName" type="number" placeholder="+460000000">
+
+
+    
+          <div>
+            <p>Please select your age</p>
+              <input name = "0-50age" type="checkbox">
+              <label for = "0-50age">0-50</label> <br>
+
+              <input name = "51-100age" type="checkbox">
+              <label for = "51-100age">51-100</label> <br>
+
+              <p>Please select your gender</p>
+              <input name = "male" type="radio">
+              <label for = "male">Male</label> <br>
+
+              <input name = "female" type="radio">
+              <label for = "femle">Female</label> <br>
+
+              <input name = "no-gender" type="radio">
+              <label for = "no-gender">None</label> <br>
+          </div>
+
+           <br> <input id = "submit-btn" type="submit" value="Submit">
+
+        </form>
+    
+</body>
+</html>
